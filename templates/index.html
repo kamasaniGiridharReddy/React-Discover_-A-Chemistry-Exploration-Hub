@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chemical Information Hub</title>
+    <style>
+        /* CSS Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body, html {
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Background and Layout Styles */
+        body {
+            background-image: url('static/p3.jpg');
+            background-size: cover; /* Ensures the background image covers the viewport without tiling */
+            background-attachment: fixed; /* Keeps the background fixed on scroll for a parallax effect */
+            background-position: center; /* Centers the background image */
+            color: #0e0202;
+
+            /* Layout */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start; /* Align items to the start for title at the top */
+            text-align: center;
+            line-height: 1.6;
+        }
+
+        /* Box for Title */
+        .title-box {
+            background-color: rgba(11, 191, 222, 0.7); /* Semi-transparent background for the title */
+            padding: 20px 40px; /* Space around the title */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 20px rgb(172, 231, 162); /* Shadow effect for depth */
+            margin-bottom: 40px; /* Space between title and buttons */
+            margin-top: 20px; /* Add margin at the top */
+        }
+
+        /* Box for Links */
+        .link-box {
+            background-color: rgba(0, 0, 0, 0.7); /* Default semi-transparent background for links */
+            padding: 15px 30px; /* Space around the links */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Shadow effect for depth */
+            margin: 10px 0; /* Space between buttons */
+            transition: transform 0.3s ease; /* Transition effect for hover */
+        }
+
+        /* Individual Backgrounds for Buttons */
+        .element-info {
+            background-color: rgba(255, 193, 7, 0.7); /* Yellow background */
+        }
+        .compound-formation {
+            background-color: rgba(76, 175, 80, 0.7); /* Green background */
+        }
+        .reaction-info {
+            background-color: rgba(63, 81, 181, 0.7); /* Blue background */
+        }
+
+        /* Header and Link Styles */
+        h1 {
+            font-size: 2.5em;
+            margin: 0; /* Remove margin from the header */
+            color: #ececed; /* Bright color for title */
+            text-shadow: 2px 2px 4px rgba(142, 9, 172, 0.6);
+        }
+        a {
+            text-decoration: none; /* Remove underline from links */
+            font-size: 1.2em; /* Font size for links */
+            color: #031217; /* Color for links */
+            transition: color 0.3s ease; /* Transition effect for hover state */
+        }
+        a:hover {
+            color: #ff5722; /* Change color on hover */
+        }
+
+        /* Button hover effect */
+        .link-box:hover {
+            transform: scale(1.05); /* Slightly enlarge the button on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="title-box">
+        <h1>Welcome to the Chemical Information Hub</h1>
+    </div>
+    <div class="link-box element-info">
+        <a href="/element_info">Element Information</a>
+    </div>
+    <div class="link-box compound-formation">
+        <a href="/compound_formation">Compound Formation</a>
+    </div>
+    <div class="link-box reaction-info">
+        <a href="/reaction_info">Reaction Details</a>
+    </div>
+</body>
+</html>
